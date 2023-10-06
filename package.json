@@ -1,0 +1,25 @@
+{
+  "name": "static-server",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build  &&  electron-builder",
+    "preview": "vite preview"
+  },
+  "build": {
+    "extends": "electron-builder.config.json"
+  },
+   "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "vite": "^4.4.2",
+    "vite-plugin-electron": "^0.12.0"
+  }
+
+}

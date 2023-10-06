@@ -1,0 +1,39 @@
+{
+  "productName":"本地静态服务器",
+  "copyright":"Shanghai Huisheng Internet Technology Co., Ltd.",
+  "directories": {
+    "output": "build"
+  },
+  "extraResources":[
+    {
+      "from":"public/images/",
+      "to": "images/"
+    },
+    {
+      "from":"electron-src/server/config/server.config.json",
+      "to": "config/server.config.json"
+    }
+  ],
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "./public/images/logo.ico",
+    "uninstallerIcon": "./public/images/logo.ico",
+    "installerHeaderIcon": "./public/images/logo.ico",
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "本地静态服务器"
+  },
+
+  "win": {
+    "icon": "./public/images/logo.ico"
+  },
+
+  "linux": {
+    "icon": "./public/images/logo.ico"
+  },
+
+  "mac": {
+    "icon": "./public/images/logo.ico"
+  }
+}
